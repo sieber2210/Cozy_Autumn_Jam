@@ -2,5 +2,6 @@ public enum ManagerStatus
 {
     Shutdown,
     Initializing,
-    Started
+    Started,
+    Size
 }
