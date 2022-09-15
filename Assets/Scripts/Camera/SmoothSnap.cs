@@ -87,10 +87,6 @@ public class SmoothSnap : MonoBehaviour
             target.z - current.z
         );
 
-        Debug.Log("Delta X " + (target.x - current.x));
-        Debug.Log("Delta Y " + (target.y - current.y));
-        Debug.Log("Delta Z " + (target.z - current.z));
-
         Vector3 targetRot = targetSnapPoint.transform.rotation.eulerAngles;
         Vector3 currentRot = currentSnapPoint.transform.rotation.eulerAngles;
         finalRotation = Quaternion.Euler(targetRot.x, targetRot.y, targetRot.z);
