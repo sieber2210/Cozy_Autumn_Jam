@@ -241,7 +241,7 @@ Transform:
   m_Children:
   - {fileID: 1424481685}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &52223781
 GameObject:
@@ -1614,8 +1614,6 @@ GameObject:
   - component: {fileID: 312868375}
   - component: {fileID: 312868374}
   - component: {fileID: 312868373}
-  - component: {fileID: 312868377}
-  - component: {fileID: 312868378}
   m_Layer: 0
   m_Name: Cauldron
   m_TagString: Untagged
@@ -1969,7 +1967,7 @@ Transform:
   - {fileID: 1898695393}
   - {fileID: 2110799630}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &424631255
 PrefabInstance:
@@ -4125,14 +4123,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022462050}
-  m_LocalRotation: {x: 0, y: -0.69785297, z: 0, w: 0.71624106}
-  m_LocalPosition: {x: -15.9, y: 6.74, z: -8.26}
+  m_LocalRotation: {x: 0.21246143, y: -0.39478388, z: 0.09436219, w: 0.8888767}
+  m_LocalPosition: {x: 14.59, y: 10.33, z: -17.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -88.51, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.886, y: -47.896, z: 0}
 --- !u!114 &1022462054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4501,7 +4499,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1069459884
 PrefabInstance:
