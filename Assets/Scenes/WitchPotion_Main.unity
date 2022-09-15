@@ -241,7 +241,7 @@ Transform:
   m_Children:
   - {fileID: 1424481685}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &52223781
 GameObject:
@@ -1614,6 +1614,8 @@ GameObject:
   - component: {fileID: 312868375}
   - component: {fileID: 312868374}
   - component: {fileID: 312868373}
+  - component: {fileID: 312868377}
+  - component: {fileID: 312868378}
   m_Layer: 0
   m_Name: Cauldron
   m_TagString: Untagged
@@ -1647,7 +1649,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Height: 2
+  m_Height: 3.24
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &312868374
@@ -4057,6 +4059,7 @@ GameObject:
   - component: {fileID: 1022462053}
   - component: {fileID: 1022462052}
   - component: {fileID: 1022462051}
+  - component: {fileID: 1022462054}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4122,14 +4125,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022462050}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.74, z: -10}
+  m_LocalRotation: {x: 0, y: -0.69785297, z: 0, w: 0.71624106}
+  m_LocalPosition: {x: -15.9, y: 6.74, z: -8.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -88.51, z: 0}
+--- !u!114 &1022462054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022462050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fd494fa5a576b48be972b2684c6aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024190287
 GameObject:
   m_ObjectHideFlags: 0
@@ -4486,7 +4501,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1069459884
 PrefabInstance:
