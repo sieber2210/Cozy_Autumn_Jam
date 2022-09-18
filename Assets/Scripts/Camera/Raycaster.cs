@@ -20,6 +20,10 @@ public class Raycaster : MonoBehaviour
                 {
                     hit.collider.GetComponent<Cauldron>().CreatePotion();
                 }
+                else if (hit.collider.GetComponent<ThoughtBubble>() != null)
+                {
+                    hit.collider.GetComponent<ThoughtBubble>().AcceptRequest();
+                }
             }
         }
     }

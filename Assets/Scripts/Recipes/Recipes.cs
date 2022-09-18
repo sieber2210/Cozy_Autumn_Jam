@@ -6,7 +6,10 @@ public class Recipes : MonoBehaviour
 {
     public Object[] recipes;
 
-    public void Start()
+    // Awake is called before Start. Any internal state initialization that needs to be done should be done here if possible.
+    // If initialization depends on other GameObjects existing first, it is unsafe to use Awake as they will not be initialized
+    // until their Awake function is called. Use Start instead.
+    public void Awake()
     {
         recipes = Resources.LoadAll("ScriptableObjects/Recipes", typeof(Recipe));
         foreach (var r in recipes) {

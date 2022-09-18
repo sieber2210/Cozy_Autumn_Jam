@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615dc5f4c5275ea45a84ea0ffeca1455, type: 3}
+  m_Name: Paralysis Poison
+  m_EditorClassIdentifier: 
+  recipe:
+  - element: 3
+    amount: 1
+  - element: 7
+    amount: 2
+  thoughtBubbleColor: {r: 0.6905373, g: 1, b: 0.3537736, a: 1}
+  potionPrefab: {fileID: 5345382045718055124, guid: 92f690240f98bbe42a9fdc9f937b4c33, type: 3}

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 615dc5f4c5275ea45a84ea0ffeca1455, type: 3}
-  m_Name: Sparkling Water Recipe
+  m_Name: Potion of Speed
   m_EditorClassIdentifier: 
   recipe:
+  - element: 3
+    amount: 2
   - element: 1
     amount: 2
-  - element: 2
-    amount: 1
-  potionName: Sparkling Water
-  potionPrefab: {fileID: 6522609599127299124, guid: ffeddadd8f041af4484a1cc0f57d56eb, type: 3}
+  thoughtBubbleColor: {r: 0.9433962, g: 0.8792894, b: 0, a: 1}
+  potionPrefab: {fileID: 1291994525801981978, guid: 8eb55704670743e4a8382ef7a6f20a78, type: 3}

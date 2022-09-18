@@ -7,6 +7,9 @@ public class Recipe : ScriptableObject
 {
     public List<Measure> recipe;
 
+    // the color of the potion that will show up in the thought bubble.
+    public Color thoughtBubbleColor;
+
     // the prefab that should be rendered when this potion is created.
     public GameObject potionPrefab;
 
