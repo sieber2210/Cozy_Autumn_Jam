@@ -1,10 +1,65 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class TestUI : MonoBehaviour
 {
-    private void OnGUI()
+    [SerializeField] List<GameObject> inventorySlots = new List<GameObject>();
+
+    List<string> itemList = new List<string>();
+
+    private void Start()
+    {
+        //StartCoroutine(UITick());
+    }
+
+    public void AddItem()
+    {
+        itemList = Managers.Inventory.GetItemList();
+
+        if(inventorySlots[0].GetComponentInChildren<TextMeshProUGUI>().text == "")
+        {
+            inventorySlots[0].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[0]);
+        }
+        else
+        {
+            if (inventorySlots[1].GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                inventorySlots[1].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[1]);
+            }
+            else
+            {
+                if (inventorySlots[2].GetComponentInChildren<TextMeshProUGUI>().text == "")
+                {
+                    inventorySlots[2].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[2]);
+                }
+                else
+                {
+                    if (inventorySlots[3].GetComponentInChildren<TextMeshProUGUI>().text == "")
+                    {
+                        inventorySlots[3].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[3]);
+                    }
+                    else
+                    {
+                        Debug.Log("No more inventory slots");
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
+    IEnumerator UITick()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10.0f);
+            AddItem();
+        }
+    }
+
+    /*private void OnGUI()
     {
         int posX = 10;
         int posY = 10;
@@ -41,5 +96,5 @@ public class TestUI : MonoBehaviour
 
             posX += width + buffer;
         }
-    }
+    }*/
 }

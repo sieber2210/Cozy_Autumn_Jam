@@ -29,7 +29,9 @@ public class InventoryManager : MonoBehaviour, IGameManager
     public void AddItem(string name)
     {
         if (items.ContainsKey(name))
-            items[name] += 1;
+        {
+            items[name] = 1;
+        }
         else
             items[name] = 1;
 
@@ -38,7 +40,7 @@ public class InventoryManager : MonoBehaviour, IGameManager
 
     public List<string> GetItemList()
     {
-        List<string> list = new List<string>();
+        List<string> list = new List<string>(items.Keys);
         return list;
     }
 
