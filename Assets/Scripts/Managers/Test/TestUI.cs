@@ -1,45 +1,58 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class TestUI : MonoBehaviour
 {
-    private void OnGUI()
+    [SerializeField] List<GameObject> inventorySlots = new List<GameObject>();
+
+    List<string> itemList = new List<string>();
+
+    public void AddItem(string item)
     {
-        int posX = 10;
-        int posY = 10;
-        int width = 100;
-        int height = 30;
-        int buffer = 10;
+        itemList = Managers.Inventory.GetItemList();
 
-        List<string> itemList = Managers.Inventory.GetItemList();
-        if (itemList.Count == 0)
-            GUI.Box(new Rect(posX, posY, width, height), "No Items");
-
-        foreach (string item in itemList)
+        if (!itemList.Contains(item))
         {
-            int count = Managers.Inventory.GetItemCount(item);
-            Texture2D image = Resources.Load<Texture2D>($"Icons/{item}");
-            GUI.Box(new Rect(posX, posY, width, height), new GUIContent($"({count})", image));
+            Managers.Inventory.AddItem(item);
+            itemList = Managers.Inventory.GetItemList();
 
-
-            if (item == "health")
+            if (inventorySlots[0].GetComponentInChildren<TextMeshProUGUI>().text == "")
             {
-                if (GUI.Button(new Rect(posX, posY + height + buffer, width, height), "Use Health"))
+                inventorySlots[0].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[0]);
+            }
+            else
+            {
+                if (inventorySlots[1].GetComponentInChildren<TextMeshProUGUI>().text == "")
                 {
-                    if (Managers.Player.health >= Managers.Player.maxHealth)
+                    inventorySlots[1].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[1]);
+                }
+                else
+                {
+                    if (inventorySlots[2].GetComponentInChildren<TextMeshProUGUI>().text == "")
                     {
-                        Debug.Log("Player already at full health. Cannot heal more!");
+                        inventorySlots[2].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[2]);
                     }
-                    else if (Managers.Player.health < Managers.Player.maxHealth)
+                    else
                     {
-                        Managers.Inventory.ConsumeItem("health");
-                        Managers.Player.ChangeHealth(25);
+                        if (inventorySlots[3].GetComponentInChildren<TextMeshProUGUI>().text == "")
+                        {
+                            inventorySlots[3].GetComponentInChildren<TextMeshProUGUI>().SetText(itemList[3]);
+                        }
+                        else
+                        {
+                            Debug.Log("No more inventory slots");
+                            return;
+                        }
                     }
                 }
             }
-
-            posX += width + buffer;
+        }
+        else
+        {
+            Debug.Log("Player already has a " + item);
+            return;
         }
     }
 }

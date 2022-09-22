@@ -2,18 +2,39 @@ using UnityEngine;
 
 public class TestAddItem : MonoBehaviour
 {
+    [SerializeField] TestUI testUI;
+
+    const string circle = "Circle";
+    const string square = "Square";
+    const string cap = "Capsule";
+    const string rounded = "Rounded";
+    const string diamond = "Diamond";
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            Managers.Inventory.AddItem("Circle");
-
+        {
+            testUI.AddItem(circle);
+        }
+        
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            Managers.Inventory.AddItem("Square");
-
+        {
+            testUI.AddItem(square);
+        }
+        
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            Managers.Inventory.AddItem("Capsule");
-
+        {
+            testUI.AddItem(cap);
+        }
+        
         if (Input.GetKeyDown(KeyCode.Alpha4))
-            Managers.Inventory.AddItem("health");
+        {
+            testUI.AddItem(rounded);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            testUI.AddItem(diamond);
+        }
     }
 }
