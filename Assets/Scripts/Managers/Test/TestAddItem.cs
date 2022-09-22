@@ -8,31 +8,33 @@ public class TestAddItem : MonoBehaviour
     const string square = "Square";
     const string cap = "Capsule";
     const string rounded = "Rounded";
+    const string diamond = "Diamond";
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Managers.Inventory.AddItem(circle);
-            testUI.AddItem();
+            testUI.AddItem(circle);
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Managers.Inventory.AddItem(square);
-            testUI.AddItem();
+            testUI.AddItem(square);
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Managers.Inventory.AddItem(cap);
-            testUI.AddItem();
+            testUI.AddItem(cap);
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Managers.Inventory.AddItem(rounded);
-            testUI.AddItem();
+            testUI.AddItem(rounded);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            testUI.AddItem(diamond);
         }
     }
 }

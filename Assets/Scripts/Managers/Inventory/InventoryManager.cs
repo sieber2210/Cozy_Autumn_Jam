@@ -4,6 +4,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour, IGameManager
 {
     public ManagerStatus status {get; private set;}
+    public string equippedItem { get; private set; }
 
     Dictionary<string, int> items;
 
@@ -28,12 +29,19 @@ public class InventoryManager : MonoBehaviour, IGameManager
 
     public void AddItem(string name)
     {
-        if (items.ContainsKey(name))
+        if(items.Count == 4)
         {
-            items[name] = 1;
+            Debug.Log("Player already has 4 items");
         }
         else
-            items[name] = 1;
+        {
+            if (items.ContainsKey(name))
+            {
+                items[name] = 1;
+            }
+            else
+                items[name] = 1;
+        }
 
         DisplayItems();
     }
@@ -67,5 +75,19 @@ public class InventoryManager : MonoBehaviour, IGameManager
         }
         DisplayItems();
         return true;
+    }
+
+    public bool EquipItem(string item)
+    {
+        if(items.ContainsKey(item) && equippedItem != item)
+        {
+            equippedItem = name;
+            Debug.Log($"Equipped {item}");
+            return true;
+        }
+
+        equippedItem = null;
+        Debug.Log("Unequipped");
+        return false;
     }
 }
