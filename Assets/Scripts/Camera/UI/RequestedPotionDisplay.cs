@@ -28,4 +28,12 @@ public class RequestedPotionDisplay : MonoBehaviour
         transform.GetChild(index).GetComponent<Image>().sprite = elementSprites.sprites[(int)element];
         transform.GetChild(index).gameObject.SetActive(true);
     }
+
+    public void ClearRecipe(Boolean shouldClear) {
+        if (shouldClear.value) {
+            foreach (Transform child in transform) {
+                child.gameObject.SetActive(false);
+            }
+        }
+    }
 }

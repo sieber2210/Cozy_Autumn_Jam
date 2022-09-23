@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 193752, guid: 23d309f2659236448a9ac43461336d52, type: 3}
       propertyPath: m_Name
-      value: Ingredient-mushroom-toadstool
+      value: Ingredient-mushroom-toadstool Variant
       objectReference: {fileID: 0}
     - target: {fileID: 459926, guid: 23d309f2659236448a9ac43461336d52, type: 3}
       propertyPath: m_RootOrder
@@ -91,4 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 0000000003000000
+  sprite: {fileID: 21300000, guid: 24b02aece0e90654687dbf945840b106, type: 3}
   ingredientPreppedEvent: {fileID: 0}

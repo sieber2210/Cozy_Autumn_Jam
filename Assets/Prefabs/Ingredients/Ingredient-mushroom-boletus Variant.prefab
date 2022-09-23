@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 181142, guid: d2eb4c54826dc8d49926ce01a1b683d6, type: 3}
       propertyPath: m_Name
-      value: Ingredient-mushroom-boletus
+      value: Ingredient-mushroom-boletus Variant
       objectReference: {fileID: 0}
     - target: {fileID: 409614, guid: d2eb4c54826dc8d49926ce01a1b683d6, type: 3}
       propertyPath: m_RootOrder
@@ -95,4 +95,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 0300000004000000
+  sprite: {fileID: 21300000, guid: 5a2df8164f6d6d348976302f05688c69, type: 3}
   ingredientPreppedEvent: {fileID: 0}

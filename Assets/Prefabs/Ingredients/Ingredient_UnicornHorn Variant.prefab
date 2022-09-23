@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c0f1a670fc9447428cf5d91d539e33f, type: 3}
       propertyPath: m_Name
-      value: Ingredient_UnicornHorn
+      value: Ingredient_UnicornHorn Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c0f1a670fc9447428cf5d91d539e33f, type: 3}
@@ -75,4 +75,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 04000000
+  sprite: {fileID: 21300000, guid: 7c104f469ffcbbc41ae5bc4ff02712c4, type: 3}
   ingredientPreppedEvent: {fileID: 0}

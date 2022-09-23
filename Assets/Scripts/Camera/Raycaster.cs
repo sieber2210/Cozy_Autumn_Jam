@@ -14,7 +14,7 @@ public class Raycaster : MonoBehaviour
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.GetComponent<Ingredient>() != null)
                 {
-                    hit.collider.GetComponent<Ingredient>().TossInCauldron();
+                    hit.collider.GetComponent<Ingredient>().PickupItem();
                 }
                 else if (hit.collider.GetComponent<Cauldron>() != null)
                 {

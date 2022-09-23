@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133472, guid: d6b4cc95eea3d7844bd47392e43196f0, type: 3}
       propertyPath: m_Name
-      value: Ingredient-fire-flower
+      value: Ingredient-fire-flower Variant
       objectReference: {fileID: 0}
     - target: {fileID: 487574, guid: d6b4cc95eea3d7844bd47392e43196f0, type: 3}
       propertyPath: m_RootOrder
@@ -91,4 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 00000000
+  sprite: {fileID: 21300000, guid: 8867c023779670941b46a34025b0c5c6, type: 3}
   ingredientPreppedEvent: {fileID: 11400000, guid: 9773eb49c4e768e4eaac0fb0e872d186, type: 2}

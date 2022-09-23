@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 8844697855525416965}
   - component: {fileID: 8834731303065454377}
   - component: {fileID: 8875024596258005949}
+  - component: {fileID: 744627212731242011}
+  - component: {fileID: -492829703003337266}
+  - component: {fileID: -6755971417237037121}
   m_Layer: 0
   m_Name: Brandon
   m_TagString: Untagged
@@ -101,3 +104,62 @@ CapsuleCollider:
   m_Height: 2.8555796
   m_Direction: 1
   m_Center: {x: 0, y: 1.429104, z: 0.06625085}
+--- !u!114 &744627212731242011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848142558127754129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6de5ea2e33f41439b62bde8f5bc106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hueMin: 0
+  hueMax: 1
+  saturationMin: 0
+  saturationMax: 1
+  valueMin: 0
+  valueMax: 1
+--- !u!114 &-492829703003337266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848142558127754129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a43aae983771141afda9c4f77cbc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  despawnDelay: 0.9
+--- !u!114 &-6755971417237037121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848142558127754129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd926bf17235ba74591f77a6163b57e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: a3e260af58208ab4e9405cc2eb040de1, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -492829703003337266}
+        m_TargetAssemblyTypeName: Customer, Assembly-CSharp
+        m_MethodName: SatisfyRequest
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
