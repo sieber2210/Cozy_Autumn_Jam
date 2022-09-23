@@ -5,10 +5,11 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour
 {
     public List<Element> elements;
+    public Sprite sprite;
 
     public IngredientEvent ingredientPreppedEvent;
 
-    public void TossInCauldron() {
+    public void PickupItem() {
         ingredientPreppedEvent.Raise(this);
     }
 }

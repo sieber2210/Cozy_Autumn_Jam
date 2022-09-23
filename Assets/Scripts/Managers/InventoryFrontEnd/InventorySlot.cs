@@ -1,29 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    Ingredient ingredient;
+    private Ingredient ingredient;
 
     public Ingredient GetIngredient()
     {
         return ingredient;
     }
 
-    public void SetIngredient(Ingredient _ingredient)
+    public void SetIngredient(Ingredient ingredient)
     {
-        ingredient = _ingredient;
+        this.ingredient = ingredient;
+        if (ingredient != null)
+        {
+            GetComponent<Image>().sprite = this.ingredient.sprite;
+        }
+        else
+        {
+            GetComponent<Image>().sprite = null;
+        }
     }
 
     public bool IsSlotFull()
     {
-        if(ingredient is not null)
-        {
-            Debug.Log(gameObject.name + " currently has an item");
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return ingredient != null;
     }
 }

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8570886519692270536, guid: ef1830fa69ac2084194c93608c5d461c, type: 3}
       propertyPath: m_Name
-      value: Ingredient-cotton
+      value: Ingredient-cotton Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8570886519692625896, guid: ef1830fa69ac2084194c93608c5d461c, type: 3}
       propertyPath: m_RootOrder
@@ -91,4 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 02000000
+  sprite: {fileID: 21300000, guid: 120846ced9ca24c4f897fba5c641fcef, type: 3}
   ingredientPreppedEvent: {fileID: 0}

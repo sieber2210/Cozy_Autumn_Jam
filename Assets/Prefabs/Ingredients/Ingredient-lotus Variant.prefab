@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1324174454504322, guid: 543f8a1a55bed46dcbc66e2fd3600763, type: 3}
       propertyPath: m_Name
-      value: Ingredient-lotus
+      value: Ingredient-lotus Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4564573308699546, guid: 543f8a1a55bed46dcbc66e2fd3600763, type: 3}
       propertyPath: m_RootOrder
@@ -95,4 +95,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 01000000
+  sprite: {fileID: 21300000, guid: 806802f85c8816c4a94443106700498d, type: 3}
   ingredientPreppedEvent: {fileID: 0}

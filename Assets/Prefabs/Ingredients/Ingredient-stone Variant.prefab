@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133368, guid: ab33205b4ef2c844c8ac6ac7950aa369, type: 3}
       propertyPath: m_Name
-      value: Ingredient-stone
+      value: Ingredient-stone Variant
       objectReference: {fileID: 0}
     - target: {fileID: 401088, guid: ab33205b4ef2c844c8ac6ac7950aa369, type: 3}
       propertyPath: m_RootOrder
@@ -91,4 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements: 03000000
+  sprite: {fileID: 21300000, guid: 4b56e02245e9a91488dd58db685689d0, type: 3}
   ingredientPreppedEvent: {fileID: 11400000, guid: 9773eb49c4e768e4eaac0fb0e872d186, type: 2}
