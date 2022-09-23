@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 26e9856e807ebc449ba45f3230dc20a5
+guid: 4d7a77b2c40ba4e4892321be4e8e660e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Unicorn Pink-Blue
-    second: {fileID: 2100000, guid: 129346df118e9f84685a6325950a43a4, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
