@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class TestUI : MonoBehaviour
+public class InventoryUI : MonoBehaviour
 {
     [SerializeField] List<GameObject> inventorySlots = new List<GameObject>();
 
@@ -54,5 +54,10 @@ public class TestUI : MonoBehaviour
             Debug.Log("Player already has a " + item);
             return;
         }
+    }
+
+    public void RemoveItem(string item)
+    {
+
     }
 }
