@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main/WitchPotion_MainScene.unity
+    guid: 54e58a850ac865941a338fcd700a4b25
   m_configObjects: {}
