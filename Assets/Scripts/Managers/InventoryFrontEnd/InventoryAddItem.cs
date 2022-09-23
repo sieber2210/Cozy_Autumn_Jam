@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class TestAddItem : MonoBehaviour
+public class InventoryAddItem : MonoBehaviour
 {
-    [SerializeField] TestUI testUI;
+    [SerializeField] InventoryUI testUI;
 
     const string circle = "Circle";
     const string square = "Square";
