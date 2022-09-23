@@ -36,6 +36,7 @@ public class Cauldron : MonoBehaviour
         {
             // Explode and Clear elements
             Debug.Log("Kaboom! The potion exploded!");
+            elements = new List<Element>();
             return;
         }
         else
