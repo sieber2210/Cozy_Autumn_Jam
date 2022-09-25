@@ -9,9 +9,6 @@ public class Raycaster : MonoBehaviour
 
     public GameObject[] tooltips;
 
-    private const float hoverTime = 0.3f;
-    private float timer;
-
     private void Update()
     {
         // Raycast when the player clicks to select something
